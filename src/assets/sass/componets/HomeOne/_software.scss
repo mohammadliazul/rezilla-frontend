@@ -1,0 +1,40 @@
+.software-section-wrapper{
+    .software-section-inner{
+        background-image: url('../../../images/HomeOne/Software/Shape.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+    }
+}
+
+
+/* ================= Responsive start ================ */
+
+@media  (max-width:1200px)  {
+        .software-img-wrapper{
+            .software-img-inner{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+}
+@media  (max-width:992px)  {
+    .software-section-wrapper{
+        .software-section-inner{
+            background-size: cover;
+        }
+    }
+
+}
+@media  (max-width:576px)  {
+    .software-content-btn-inner{
+        display: inline-grid;
+        a{
+            margin: 10px 0;
+        }
+    }
+}
+
+/* ================= Responsive end ================ */

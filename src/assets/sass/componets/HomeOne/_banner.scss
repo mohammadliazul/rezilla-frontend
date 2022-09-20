@@ -1,0 +1,80 @@
+.hero-banner-wrapper {
+    @include bgImage('../../../images/HomeOne/Banner/Banner.png');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+    padding: 150px 0;
+
+    p {
+        margin: 20px 0px 50px;
+        display: block;
+        padding-right: 34px;
+        line-height: 30px;
+    }
+
+    .hero-img-inner {
+        position: relative;
+
+        .hero-small-img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: auto;
+        }
+    }
+
+    .button-wrapper {
+        .button-black {
+            &:hover {
+                background-color: $color-blue;
+                color: $color-white;
+            }
+        }
+    }
+}
+
+/* ================= Responsive start ================ */
+@media screen and (min-width:992px) and (max-width:1880px) {
+    img.hero-big-img {
+        width: 100%;
+    }
+
+    .hero-banner-wrapper .hero-img-inner .hero-small-img {
+        width: 28%;
+    }
+}
+
+@media (max-width:991px) {
+    .hero-image {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    .hero-banner-wrapper {
+        background-image: none;
+
+        .hero-image {
+            display: none;
+        }
+
+        .buttons {
+            display: grid;
+            gap: 12px;
+        }
+    }
+
+}
+
+@media (max-width:374px) {
+    .button-wrapper {
+        display: grid;
+        gap: 12px;
+    }
+
+}
+
+/* ================= Responsive end ================ */

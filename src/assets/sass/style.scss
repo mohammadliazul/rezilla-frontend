@@ -1,0 +1,35 @@
+// google font 
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Rubik:wght@400;500&display=swap");
+
+
+// general css
+@import "./partials/responsive";
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/common";
+
+// helpers
+@import './componets/Helper/navigation';
+@import './componets/Helper/headerSignUp';
+@import './componets/Helper/searchPopUp';
+@import './componets/Helper/singleCountUp';
+@import './componets/Helper/videoPlayBtn';
+@import './componets/Helper/subscribeFormBtn';
+
+// modal video
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
+// components 
+@import './componets/HomeOne/header';
+@import './componets/HomeOne/banner';
+@import './componets/HomeOne/clientSection';
+@import './componets/HomeOne/about';
+@import './componets/HomeOne/counterSection';
+@import './componets/HomeOne/Services/serviceItem';
+@import './componets/HomeOne/faq';
+@import './componets/HomeOne/Testimonial/testimonial';
+@import './componets/HomeOne/software';
+@import './componets/HomeOne/Blog/blogItem';
+@import './componets/HomeOne/subscribe';
+@import './componets/HomeOne/footer';
+

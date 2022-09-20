@@ -1,0 +1,23 @@
+header {
+    background-color: transparent;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+     
+
+
+
+/* ================= Responsive start ================ */
+            @media(max-width: 991.5px) {
+                header {
+                    background-color: $color-blue;
+                    padding: 0;   
+                }
+
+            }
+/* ================= Responsive end ================ */

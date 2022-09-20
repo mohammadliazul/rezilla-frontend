@@ -1,0 +1,37 @@
+.subscribe-section-wrapper{
+    background-image: url('../../../images/HomeOne/Subscribe/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .theme-h3{
+        padding-right: 150px;
+        line-height: 44px;
+        margin: 0;
+    }
+}
+/* ================= Responsive start ================ */
+
+@media  (max-width:1024px)  {
+    .subscribe-section-wrapper{
+        .theme-h3{
+            padding-right: 100px;
+        }
+    }
+}
+@media (max-width:768px)  {
+    .subscribe-section-wrapper{
+        .theme-h3{
+            padding-right: 50px;
+        }
+    }
+}
+@media (max-width:576px)  {
+    .subscribe-section-wrapper{
+        .theme-h3{
+            padding-right: 0px;
+            padding-bottom: 50px;
+        }
+    }
+}
+/* ================= Responsive end ================ */
+

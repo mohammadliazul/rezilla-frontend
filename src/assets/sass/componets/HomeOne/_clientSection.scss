@@ -1,0 +1,52 @@
+.client-wrapper{
+  .client-logo-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background: $color-lightBlue2;
+    grid-gap: 1px; 
+    .client-logo{
+        background-color: $color-white;
+        filter: grayscale(1);
+        img{
+          padding: 14px 0;
+          opacity: 0.35;
+        }
+        &:hover{
+          filter: grayscale(0);
+          img{
+            opacity: 1;
+            transition: 0.4s ease-in-out;
+          }
+        }
+    }
+    .client-logo:nth-child(even){
+      text-align: center;
+    }
+    .client-logo:nth-child(odd){
+      text-align: center;
+    }
+  }
+}
+
+
+/* ================= Responsive start ================ */
+@media (max-width:576px) {
+  .client-wrapper {
+    padding-top: 0;
+  }
+}
+
+@media  (max-width:1200px)  {
+  .client-wrapper{
+    .client-logo-wrapper{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 1px; 
+    }
+  }
+}
+
+
+/* ================= Responsive end ================ */

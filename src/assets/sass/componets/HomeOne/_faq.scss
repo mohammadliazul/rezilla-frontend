@@ -1,0 +1,38 @@
+.faq-wrapper{
+    background-image: url('../../../images/HomeOne/FAQ/faq.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #F1F6FF;
+
+    .accordion-item{
+        margin-bottom: 25px;
+        border-radius: 8px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        .accordion-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 20px 15px;
+            font-size: 22px;
+            line-height: 30px;
+            color: $color-black;
+            text-align: left;
+            background-color: $color-white;
+            border: 0;
+            border-radius: 8px;
+            overflow-anchor: none;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+        }
+        .accordion-button:not(.collapsed) {
+            color: $color-blue;
+        }
+    }
+
+    .faq-thumbnail {
+        position: relative;
+        z-index: 1;   
+    }
+
+}

@@ -1,0 +1,12 @@
+.sign-up-btn{
+    padding: 14px 30px;
+    background-color: $color-blue;
+    color: $color-white;
+    border-radius: 50px;
+    display: inline-block;
+    margin-left: 20px;
+    &:hover{
+        background-color: $color-black;
+        transition: 0.4 ease-in-out;
+    }
+}

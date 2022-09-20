@@ -1,0 +1,26 @@
+.service-card{
+    .service-icon-wrapper{
+        height: 85px;
+        width: 85px;
+        border: 1px solid $color-blue;
+        border-radius: 50%;
+        @include flexCenterInline;
+        i{
+            color: $color-black;
+            font-size: 25px;
+        }
+        transition: 0.6s ease-in-out;
+    }
+    &:hover{
+        .service-icon-wrapper{
+            background-color: $color-blue;
+            i{
+                color: $color-white;
+            }
+        }
+        h6{
+            color: $color-blue; 
+            transition: 0.6s ease-in-out;
+        }
+    }  
+}

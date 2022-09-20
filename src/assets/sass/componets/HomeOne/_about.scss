@@ -1,0 +1,56 @@
+.about-wrapper{
+    height: 690px;
+    .about-inner{
+        position: relative;
+        .about-front-img{
+            position: absolute;
+            right: 30px;
+            top: -50px;
+            z-index: 5;
+        }
+        .about-back-img {
+            position: absolute;
+            right: 160px;
+            top: -140px;
+            z-index: -1;
+        }
+        
+    }
+    h3{
+        margin-bottom: 25px;
+    }
+    .info-list {
+        margin: 25px 0 50px 0;
+        li{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 35px;
+            color: $color-gray;
+            margin: 0;
+            position: relative;
+    
+            &:before {
+                color: $color-blue;
+                content: "\f00c";
+                font-weight: 600;
+                margin-right: 15px;
+                font-family: "Font Awesome 5 Free";
+            }
+        }   
+    }
+}
+
+/* ================= Responsive start ================ */
+@media  (max-width:576px)  {
+    .about-wrapper{
+        .about-inner{
+            .about-front-img{
+                display: none; 
+            }
+            .about-back-img {
+                display: none;
+            }          
+        }    
+    }
+}
+/* ================= Responsive end ================ */
